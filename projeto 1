@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Interativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeIn 2s ease;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin-top: 1rem;
+            animation: fadeIn 3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .project h2 {
+            font-size: 1.75rem;
+            margin-top: 0;
+        }
+
+        .project p {
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #06b6d4;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0891b2;
+            transform: scale(1.05);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(120deg, #2c5364, #0f2027);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            animation: fadeIn 2s ease;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #94a3b8;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio Interativo</h1>
+        <p>Explore meus projetos e veja o que posso criar!</p>
+    </header>
+
+    <section class="hero">
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <p>Aqui você encontrará os projetos mais incríveis que já criei.</p>
+    </section>
+
+    <main class="max-w-6xl mx-auto py-12 px-6">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="project">
+                <h2>Gerenciador de Tarefas</h2>
+                <p>Uma aplicação poderosa para organizar tarefas diárias, com filtros avançados e integração com APIs.</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="project">
+                <h2>Portfólio Interativo</h2>
+                <p>Um site responsivo e dinâmico para exibir projetos de forma criativa usando animações e interatividade.</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="project">
+                <h2>Calculadora Avançada</h2>
+                <p>Uma calculadora web com recursos científicos, interface moderna e fácil de usar.</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Desenvolvido por Abner Miguel. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
